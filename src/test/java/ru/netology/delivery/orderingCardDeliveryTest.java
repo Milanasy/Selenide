@@ -19,7 +19,7 @@ public class orderingCardDeliveryTest {
 
         @Test
         void CardDelivery () {
-            open("http://localhost:9999");
+            open("http://localhost:7777");
             $("[data-test-id=city] input").setValue("Белгород");
             String bookedDate = makeDate(4, "dd.MM.yyyy");
             $("[data-test-id='date'] input").sendKeys(Keys.chord(Keys.SHIFT, Keys.HOME));
